@@ -28,8 +28,8 @@ Projekt demonstruje podstawowe techniki wizualizacji danych w Pythonie z wykorzy
 
 1. Sklonuj repozytorium:  
    ```bash
-   git clone https://github.com/TwojNick/lab5-wizualizacja.git
-   cd lab5-wizualizacja
+   git clone https://github.com/Auroochs/zadanie_5.git
+   cd zadanie_5
    ```
 2. Utwórz i aktywuj środowisko wirtualne:  
    ```bash
@@ -45,7 +45,7 @@ Projekt demonstruje podstawowe techniki wizualizacji danych w Pythonie z wykorzy
 ## Struktura projektu
 
 ```
-lab5-wizualizacja/
+zadanie_5/
 ├── examples/
 │   ├── matplotlib_line_scatter.py   # wykres liniowy i scatter
 │   └── plotly_bar_pie.py            # wykres słupkowy i pie
@@ -54,8 +54,7 @@ lab5-wizualizacja/
 ├── bar_chart.html                   # wykres słupkowy (Plotly)
 ├── pie_chart.html                   # wykres kołowy (Plotly)
 ├── raport.md                        # raport z laboratorium
-├── README.md                        # ten plik
-└── requirements.txt                 # lista zależności
+└── README.md                        # 
 ```
 
 ## Uruchomienie przykładów
