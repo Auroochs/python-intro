@@ -15,20 +15,32 @@ Celem tego laboratorium było przeprowadzenie analizy wielokryterialnej (MCDM) d
 ## 3. Wyniki
 Poniższa tabela prezentuje ranking alternatyw:
 
-| Alternatywa   |   TOPSIS |   SPOTIS |     VIKOR |   PROMETHEE II |   WSM |
-|:--------------|---------:|---------:|----------:|---------------:|------:|
-| A1            | 0.714588 | 0.341185 | 0.0393479 |       0.18848  |     3 |
-| A2            | 0.549812 | 0.435992 | 0.282842  |      -0.18848  |     1 |
-| A3            | 0.693398 | 0.31152  | 0.188941  |       0.376961 |     5 |
-| A4            | 0.306602 | 0.68848  | 1         |      -0.376961 |     2 |
-| A5            | 0.609854 | 0.401476 | 0.160607  |       0        |     4 |
+| Alternatywa |   TOPSIS |   SPOTIS |    VIKOR |   PROMETHEE II |   WSM |
+|:------------|---------:|---------:|---------:|---------------:|------:|
+| A1          |   0.7146 |   0.3412 | 0.03935  |        0.1885  |     3 |
+| A2          |   0.5498 |   0.4360 | 0.28284  |       -0.1885  |     1 |
+| A3          |   0.6934 |   0.3115 | 0.18894  |        0.3770  |     5 |
+| A4          |   0.3066 |   0.6885 | 1.00000  |       -0.3770  |     2 |
+| A5          |   0.6099 |   0.4015 | 0.16061  |        0.0000  |     4 |
 
 ## 4. Analiza i wnioski
-- **Zbieżność rankingów:**  
-- **Różnice:**  
-- **Wnioski:**  
+
+**Zbieżność rankingów:**  
+- Alternatywa **A1** osiąga najlepsze lub drugie wyniki we wszystkich metodach (TOPSIS: 1., VIKOR: 1., PROMETHEE II: 2., SPOTIS: 2., WSM: 3.), co świadczy o jej stabilnej przewadze.  
+- Alternatywa **A3** znajduje się wysoko w metodach odległościowych i przewag netto (TOPSIS: 2., SPOTIS: 1., PROMETHEE II: 1.), lecz wypada słabiej w WSM (5.) i VIKOR (3.), co pokazuje wrażliwość na schemat agregacji.
+
+**Różnice:**  
+- **WSM** faworyzuje **A2** (1.) dzięki wysokim surowym wartościom kryteriów, podczas gdy **SPOTIS** i **VIKOR** preferują **A1**.  
+- **PROMETHEE II** wyróżnia **A3** (1.), podczas gdy w TOPSIS zajmuje ona drugie miejsce.  
+- Metody oparte na odległościach (TOPSIS, SPOTIS) i transformacyjne (VIKOR) często wspierają te same alternatywy (przede wszystkim A1), natomiast **WSM** i **PROMETHEE II** ukazują inne preferencje.
+
+**Wnioski:**  
+- **Alternatywa A1** jest najbardziej uniwersalnym wyborem — regularnie plasuje się w czołówce we wszystkich metodach.  
+- **Alternatywa A3** jest rekomendowana, jeśli kluczowe są metody oparte na przewagach netto i minimalnych odległościach.  
+- **Alternatywa A2** może być atrakcyjna w scenariuszu maksymalizacji sumarycznej (WSM), ale słabiej wypada w PROMETHEE II i TOPSIS.  
+- Zalecamy wybór **A1** jako najbardziej kompromisową i stabilną opcję.
 
 ## 5. Załączniki
 - `lab_mcdm.py` – skrypt wykonujący obliczenia.  
 - `wyniki_mcdm.csv` – wygenerowane wyniki.  
-- `raport.md` – niniejszy raport.  
+- `raport.md` – niniejszy raport.
